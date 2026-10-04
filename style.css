@@ -1,55 +1,36 @@
-{
-box-sizing: border-box;
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #edf2ff;
+  background: #0b1020;
 }
-
+* { box-sizing: border-box; }
 body {
-margin: 0;
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 24px;
-background: #101827;
-color: #f8fafc;
-font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.7;
+  background: radial-gradient(ellipse at top, #20365f, #0b1020 65%);
 }
-
-.card {
-width: 100%;
-max-width: 560px;
-padding: 40px;
-border: 1px solid #334155;
-border-radius: 20px;
-background: #1e293b;
-text-align: center;
+.container { width: min(900px, 92%); margin: auto; }
+.hero { text-align: center; padding: 80px 0 48px; }
+.eyebrow { color: #9bbcff; letter-spacing: .14em; font-size: .8rem; }
+h1 { font-size: clamp(2.7rem, 8vw, 5rem); line-height: 1.1; margin: 16px 0; }
+.hero p { color: #bdc9e0; max-width: 600px; margin: 0 auto 25px; }
+.button {
+  display: inline-block; background: #a9c7ff; color: #0b1020;
+  padding: 12px 20px; border-radius: 10px; text-decoration: none;
+  font-weight: 700;
 }
-
-.badge {
-display: inline-block;
-padding: 8px 12px;
-border-radius: 20px;
-background: #14532d;
-color: #bbf7d0;
-font-size: 13px;
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.card, .resources {
+  background: #121e34; border: 1px solid #2c3d5d;
+  border-radius: 16px; padding: 24px; margin-bottom: 16px;
 }
-
-h1 {
-margin-top: 24px;
-font-size: 32px;
-}
-
-p {
-color: #cbd5e1;
-line-height: 1.8;
-}
-
-a {
-display: inline-block;
-margin-top: 16px;
-padding: 12px 20px;
-border-radius: 8px;
-background: #22c55e;
-color: #052e16;
-font-weight: bold;
-text-decoration: none;
+.card h2, .resources h2 { margin-top: 0; }
+.card p { color: #bdc9e0; }
+.resources a { display: inline-block; margin: 8px 14px 8px 0; color: #a9c7ff; }
+footer { text-align: center; padding: 24px 0 40px; color: #91a0bc; }
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding-top: 50px; }
 }

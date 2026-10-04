@@ -1,0 +1,160 @@
+[33mtag v1.0.0[m
+Tagger: Hosein Rotivand <hosein.rotivand@gimailcom>
+Date:   Mon Oct 5 03:02:23 2026 +0330
+
+Version 1.0.0: Git Workflow Lab
+
+[33mcommit dce7f2a4f60c005b8ff4690b4462b9fee08e2ab8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelop[m[33m, [m[1;33mtag: [m[1;33mv1.0.0[m[33m)[m
+Author: Hosein Rotivand <hosein.rotivand@gimailcom>
+Date:   Mon Oct 5 02:59:48 2026 +0330
+
+    feat: describe the change
+
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6ff9759[m
+[1m--- /dev/null[m
+[1m+++ b/.gitignore[m
+[36m@@ -0,0 +1,18 @@[m
+[32m+[m[32m# Operating system[m
+[32m+[m[32m.DS_Store[m
+[32m+[m[32mThumbs.db[m
+[32m+[m[32mdesktop.ini[m
+[32m+[m
+[32m+[m[32m# Editors[m
+[32m+[m[32m.vscode/[m
+[32m+[m[32m.idea/[m
+[32m+[m
+[32m+[m[32m# Temporary files[m
+[32m+[m[32m*.tmp[m
+[32m+[m[32m*.log[m
+[32m+[m[32m*.bak[m
+[32m+[m
+[32m+[m[32m# Environment secrets[m
+[32m+[m[32m.env[m
+[32m+[m[32m.env.*[m
+[32m+[m[32m!.env.example[m
+[1mdiff --git a/CHANGELOG.md b/CHANGELOG.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4dc9eed[m
+[1m--- /dev/null[m
+[1m+++ b/CHANGELOG.md[m
+[36m@@ -0,0 +1,9 @@[m
+[32m+[m[32m# Changelog[m
+[32m+[m
+[32m+[m[32mAll notable project changes will be documented here.[m
+[32m+[m
+[32m+[m[32m## Unreleased[m
+[32m+[m
+[32m+[m[32m- Established the initial HTML and CSS project.[m
+[32m+[m[32m- Added Git workflow documentation.[m
+[32m+[m[32m- Added repository ignore rules.[m
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 1b4bb27..4d92d3c 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -20,4 +20,38 @@[m [mThis repository is a practical exercise for the Git and GitHub course at Daneshj[m
+ [m
+ Project Status[m
+ [m
+[31m-Learning and practice in progress.[m
+\ No newline at end of file[m
+[32m+[m[32mLearning and practice in progress.[m
+[32m+[m[32m## Repository Structure[m
+[32m+[m
+[32m+[m[32m```text[m
+[32m+[m[32m.[m
+[32m+[m[32m├── docs/[m
+[32m+[m[32m│   └── course-map.md[m
+[32m+[m[32m├── .gitignore[m
+[32m+[m[32m├── CHANGELOG.md[m
+[32m+[m[32m├── index.html[m
+[32m+[m[32m├── style.css[m
+[32m+[m[32m└── README.md[m
+[32m+[m[32mDevelopment Workflow[m
+[32m+[m
+[32m+[m[32mThis project uses Git to track changes and GitHub to host the repository.[m
+[32m+[m
+[32m+[m[32mmain: stable project history[m
+[32m+[m[32mdevelop: integration branch for ongoing development[m
+[32m+[m[32mfeature/*: branches for individual improvements[m
+[32m+[m[32mrelease/*: branches for preparing releases[m
+[32m+[m[32mhotfix/*: branches for urgent fixes[m
+[32m+[m
+[32m+[m[32mChanges should be committed with clear messages and reviewed before being[m
+[32m+[m[32mmerged into the stable branch.[m
+[32m+[m
+[32m+[m[32mVersioning[m
+[32m+[m
+[32m+[m[32mProject releases use semantic versioning:[m
+[32m+[m
+[32m+[m[32mMAJOR: incompatible changes[m
+[32m+[m[32mMINOR: backward-compatible features[m
+[32m+[m[32mPATCH: backward-compatible fixes[m
+[32m+[m
+[32m+[m[32mSee CHANGELOG.md for the release history and[m
+[32m+[m[32mCourse Map for learning progress.[m
+[1mdiff --git a/docs/course-map.md b/docs/course-map.md[m
+[1mnew file mode 100644[m
+[1mindex 0000000..14ba711[m
+[1m--- /dev/null[m
+[1m+++ b/docs/course-map.md[m
+[36m@@ -0,0 +1,58 @@[m
+[32m+[m[32m# Git and GitHub Course Map[m
+[32m+[m
+[32m+[m[32mThis document tracks the practical implementation of Git and GitHub topics in this repository.[m
+[32m+[m
+[32m+[m[32m## 1. Git Fundamentals[m
+[32m+[m
+[32m+[m[32m- [x] Initialize a repository[m
+[32m+[m[32m- [x] Configure Git identity[m
+[32m+[m[32m- [x] Stage and commit files[m
+[32m+[m[32m- [x] Check repository status[m
+[32m+[m[32m- [x] Inspect commit history[m
+[32m+[m[32m- [ ] Compare changes with git diff[m
+[32m+[m[32m- [ ] Use .gitignore[m
+[32m+[m[32m- [ ] Restore and recover files[m
+[32m+[m
+[32m+[m[32m## 2. Branching and Integration[m
+[32m+[m
+[32m+[m[32m- [x] Create the main branch[m
+[32m+[m[32m- [x] Create the develop branch[m
+[32m+[m[32m- [ ] Create feature branches[m
+[32m+[m[32m- [ ] Merge branches[m
+[32m+[m[32m- [ ] Resolve merge conflicts[m
+[32m+[m[32m- [ ] Practice cherry-pick[m
+[32m+[m[32m- [ ] Practice rebase[m
+[32m+[m[32m- [ ] Inspect reflog[m
+[32m+[m
+[32m+[m[32m## 3. GitHub Collaboration[m
+[32m+[m
+[32m+[m[32m- [x] Create a public repository[m
+[32m+[m[32m- [x] Configure a remote[m
+[32m+[m[32m- [x] Push commits to GitHub[m
+[32m+[m[32m- [ ] Create an issue[m
+[32m+[m[32m- [ ] Create a pull request[m
+[32m+[m[32m- [ ] Review and merge a pull request[m
+[32m+[m[32m- [ ] Configure GitHub Pages[m
+[32m+[m
+[32m+[m[32m## 4. Releases and Git Flow[m
+[32m+[m
+[32m+[m[32m- [ ] Follow main, develop, feature, release and hotfix branches[m
+[32m+[m[32m- [ ] Create annotated Git tags[m
+[32m+[m[32m- [ ] Publish a GitHub Release[m
+[32m+[m[32m- [ ] Maintain a changelog[m
+[32m+[m
+[32m+[m[32m## 5. Advanced Git[m
+[32m+[m
+[32m+[m[32m- [ ] Use git stash[m
+[32m+[m[32m- [ ] Compare commits[m
+[32m+[m[32m- [ ] Amend a commit[m
+[32m+[m[32m- [ ] Practice reset and revert safely[m
+[32m+[m[32m- [ ] Practice interactive rebase[m
+[32m+[m[32m- [ ] Use git bisect[m
+[32m+[m
+[32m+[m[32m## Evidence[m
+[32m+[m
+[32m+[m[32mPractical progress should be demonstrated through actual commits, branches,[m
+[32m+[m[32mpull requests, tags, releases and repository history.[m
+[32m+[m
+[32m+[m[32mTopics are marked complete only after they have been practiced.[m
