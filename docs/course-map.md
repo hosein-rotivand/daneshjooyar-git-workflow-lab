@@ -1,58 +1,36 @@
 # Git and GitHub Course Map
 
-This document tracks the practical implementation of Git and GitHub topics in this repository.
+## Fundamentals
+- [x] Initialize repository
+- [x] Configure identity
+- [x] Stage and commit
+- [x] Inspect status and history
+- [x] Configure remote and push
+- [x] Create .gitignore
+- [ ] Practice diff, show, shortlog and blame
+- [ ] Practice restore, clean, reset and revert
+- [ ] Practice stash and reflog
 
-## 1. Git Fundamentals
+## Branching
+- [x] Create main and develop
+- [x] Create feature branch
+- [ ] Practice merge conflict resolution
+- [ ] Practice cherry-pick and rebase
+- [ ] Practice interactive rebase and bisect
+- [ ] Create release and hotfix branches
 
-- [x] Initialize a repository
-- [x] Configure Git identity
-- [x] Stage and commit files
-- [x] Check repository status
-- [x] Inspect commit history
-- [ ] Compare changes with git diff
-- [ ] Use .gitignore
-- [ ] Restore and recover files
-
-## 2. Branching and Integration
-
-- [x] Create the main branch
-- [x] Create the develop branch
-- [ ] Create feature branches
-- [ ] Merge branches
-- [ ] Resolve merge conflicts
-- [ ] Practice cherry-pick
-- [ ] Practice rebase
-- [ ] Inspect reflog
-
-## 3. GitHub Collaboration
-
-- [x] Create a public repository
-- [x] Configure a remote
-- [x] Push commits to GitHub
-- [ ] Create an issue
-- [ ] Create a pull request
-- [ ] Review and merge a pull request
+## GitHub
+- [x] Public repository
+- [ ] Create an Issue
+- [ ] Create and merge a Pull Request
 - [ ] Configure GitHub Pages
+- [ ] Explore Wiki and Discussions
+- [ ] Configure webhook
+- [ ] Explore signed commits and branch protection
 
-## 4. Releases and Git Flow
+## Releases
+- [x] Create an annotated tag
+- [ ] Publish GitHub Release
+- [x] Maintain a changelog
 
-- [ ] Follow main, develop, feature, release and hotfix branches
-- [ ] Create annotated Git tags
-- [ ] Publish a GitHub Release
-- [ ] Maintain a changelog
-
-## 5. Advanced Git
-
-- [ ] Use git stash
-- [ ] Compare commits
-- [ ] Amend a commit
-- [ ] Practice reset and revert safely
-- [ ] Practice interactive rebase
-- [ ] Use git bisect
-
-## Evidence
-
-Practical progress should be demonstrated through actual commits, branches,
-pull requests, tags, releases and repository history.
-
-Topics are marked complete only after they have been practiced.
+Topics remain unchecked until actually practiced.

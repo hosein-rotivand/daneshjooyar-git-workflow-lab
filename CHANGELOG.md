@@ -1,9 +1,9 @@
 # Changelog
 
-All notable project changes will be documented here.
+## v1.1.0
+- Improved the learning documentation.
+- Added workflow and collaboration templates.
+- Documented the Git Flow strategy.
 
-## Unreleased
-
-- Established the initial HTML and CSS project.
-- Added Git workflow documentation.
-- Added repository ignore rules.
+## v1.0.0
+- Created the initial HTML and CSS project.
