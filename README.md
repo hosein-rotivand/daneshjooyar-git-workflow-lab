@@ -21,3 +21,37 @@ This repository is a practical exercise for the Git and GitHub course at Daneshj
 Project Status
 
 Learning and practice in progress.
+## Repository Structure
+
+```text
+.
+├── docs/
+│   └── course-map.md
+├── .gitignore
+├── CHANGELOG.md
+├── index.html
+├── style.css
+└── README.md
+Development Workflow
+
+This project uses Git to track changes and GitHub to host the repository.
+
+main: stable project history
+develop: integration branch for ongoing development
+feature/*: branches for individual improvements
+release/*: branches for preparing releases
+hotfix/*: branches for urgent fixes
+
+Changes should be committed with clear messages and reviewed before being
+merged into the stable branch.
+
+Versioning
+
+Project releases use semantic versioning:
+
+MAJOR: incompatible changes
+MINOR: backward-compatible features
+PATCH: backward-compatible fixes
+
+See CHANGELOG.md for the release history and
+Course Map for learning progress.
