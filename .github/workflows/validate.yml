@@ -1,0 +1,54 @@
+name: Validate Project
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - "feature/**"
+      - "release/**"
+      - "hotfix/**"
+  pull_request:
+    branches:
+      - main
+      - develop
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate HTML Project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required files
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f README.md
+          test -f CHANGELOG.md
+          test -f docs/course-map.md
+          echo "All required files exist."
+
+      - name: Check HTML document structure
+        run: |
+          grep -qi '<html' index.html
+          grep -qi '<head' index.html
+          grep -qi '<body' index.html
+          grep -qi 'style.css' index.html
+          echo "Basic HTML checks passed."
+
+      - name: Check stylesheet
+        run: |
+          test -s style.css
+          echo "Stylesheet exists and is not empty."
+
+      - name: Check documentation
+        run: |
+          grep -qi 'Git' README.md
+          grep -qi 'CHANGELOG' README.md
+          echo "Documentation checks passed."
